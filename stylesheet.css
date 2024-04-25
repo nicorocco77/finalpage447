@@ -1,0 +1,483 @@
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 100px;
+    width: auto;
+    border-bottom: solid;
+    border-color: black;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.centerpiece {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.links {
+    display: flex;
+    flex-flow: row;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+#pfp {
+    width: 20%;
+}
+
+img
+ {
+    width: 15%;
+}
+
+
+#profilepic
+ {
+    width: 50%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+}
+
+
+#profilepic:hover {
+    transform: scale(1.1);
+}
+
+
+#largepfp {
+    width: 31%;
+    border-radius: 10px;
+    margin-top: -70px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: auto;
+    border-top: solid;
+    border-color: black;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+.form-container {
+    
+}
+
+.leftside {
+    width: 33%;
+    justify-items: center;
+    align-content: center;
+    margin-left: 30px;
+}
+
+.rightside {
+    width: 67%;
+}
+
+.profileone {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    border-bottom: solid;
+    border-color: black;
+}
+
+.profiletwo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    border-bottom: solid;
+    border-color: black;
+}
+
+.profilethree {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    border-bottom: solid;
+    border-color: black;    
+}
+
+.profilefour {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    border-bottom: solid;
+    border-color: black;    
+}
+
+.profilefive {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    border-bottom: solid;
+    border-color: black;    
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url(images/background.png);
+}
+
+.create {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic {
+
+}
+
+.discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.picturename {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: blue;
+}
+.signup {
+    margin-top: 150px;
+    margin-bottom: 240px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 500px;
+    text-align: center;
+}
+ 
+.leftinfo {
+    margin-top: 150px;
+    margin-bottom: 240px;
+    margin-right: 50px;
+    float: left;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 250px;
+    text-align: left;
+}
+
+.lefttitle {
+    text-align: center;
+}
+
+.rightinfo {
+    margin-top: 150px;
+    margin-bottom: 240px;
+    margin-left: 50px;
+    float: right;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 250px; 
+    text-align: right;
+}
+
+.righttitle {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 50px;
+    color: #a80d39;
+}
+
+h2 {
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+}
+
+h2:hover {
+    transform: scale(1.1);
+    transform-origin: left;
+}
+
+
+h3 {
+    display: inline-block;
+    position: relative;
+    color: black;
+    font-size: 22px;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+h3:hover::after {
+    transform: scaleX(1.0);
+    transform-origin: bottom left;
+}
+ 
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 60px;
+}
+
+h7 {
+    
+}
+
+h8 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+ 
+ 
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+ 
+button {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #a80d39;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #9e0d39;
+}
+
+ 
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.displayname {
+    display: flex;
+    flex: flow;
+    justify-content: center;
+    margin-top: -80px;
+
+}
+
+.pass {
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.pass:hover {
+    transform: scale(1.3);
+}
+
+.largepic {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.match {
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.match:hover {
+    transform: scale(1.3);
+}
+
+.pfdetail {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-evenly;
+
+}
+
+.pfdetailtop {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.pfdetailbottom {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.pfdetailtopleft {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    padding-right: 8px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pfdetailtopright {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    padding-right: 8px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pfdetailbottomleft {
+    display: flex;
+    width: 80%;
+    padding-right: 8px;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pfdetailbottomright {
+    display: flex;
+    width: 80%;
+    padding-right: 8px;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.description {
+    display: flex;
+    flex: flow;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.subtext {
+    display: flex;
+    flex: flow;
+    justify-content: space-evenly;
+}
+
+.matchprofilestop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: space-evenly;
+}
+
+.matchprofilesbottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: space-evenly;    
+}
+
+.matchname {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.matchone {
+    width: 30%;
+}
+.matchtwo {
+    width: 30%;
+}
+
+
+#matchpfp {
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+#matchpfp:hover {
+    transform: scale(1.1);
+}

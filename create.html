@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <title>Everylove</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<header>
+    <div class="centerpiece">
+       <!--<img src="images/designleft.jpeg" alt="background"  id="headimg">-->
+        <a href="index.html" class="top"><h1>Everylove</h1></a>
+        <img src="images/designright.jpeg" alt="background" id="headimg">
+    </div>
+
+    <div class="links">
+        <a href="discover.html" class="top"><h3>Discover</h3></a>
+        <a href="likes.html" class="top"><h3>Likes</h3></a>
+        <a href="matches.html" class="top"><h3>Matches</h3></a>
+        <a href="create.html" class="top"><h3>Profile</h3></a>
+    </div>
+
+</header>
+<body>
+
+    <div class="description">
+        <h8>Create Profile</h8>
+    </div>
+
+<div class="form-container">
+    <form action="" id="profileoform">
+        <div class="column-right">
+            <label for="photo">Profile Picture:</label>
+            <input type="file" name="photo" id="photo" onchange="displayProfilePic()">
+            <img src="#" alt="Profile Picture" style="display:none;" id="profilePic">
+        </div>
+
+
+
+        <div class="column-left">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="John Doe" name="name" required>
+
+            <label for="name">Email:</label>
+            <input type="email" placeholder="johndoe@email.com" name="email" id="email" required>
+
+            <label for="name">Gender:</label>
+            <select type="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" required>
+
+            <a href="create2.html">
+            <button type="button" onclick="submitform()">Submit</button>
+            </a>
+        </div>
+    </form>
+</div>
+
+
+<script>
+    function displayProfilePic() {
+        const input = document.getElementById('photo');
+        const img = document.getElementById('profilePic');
+
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                img.src = e.target.result;
+                img.style.display = 'block';
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+
+    function submitform() {
+        const formData = new formData(document.getElementById('profileForm'));
+
+        for (const pair of formData.entries()){
+            console.log(pair[0] + ': ' + pair[1]);
+        }
+    }    
+</script>
+
+
+
+
+
+<footer>
+    <p>2024 Everylove. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
