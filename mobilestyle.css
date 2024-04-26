@@ -141,35 +141,39 @@
 }
 
 body {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+    justify-content: center;
 }
 
 header {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: center;
     height: auto;
-    width: auto;
+    width: 100%;
     border-bottom: solid;
     border-color: black;
-    margin-bottom: auto;
-    margin-top: auto;
 }
 
 .centerpiece {
     display: flex;
     flex-flow: row;
+    height: 100px;
     width: 100%;
-    margin-bottom: 0px;
-    align-items: center;
     justify-content: center;
 }
 
 .links {
     display: flex;
     flex-flow: row;
-    width: 100%;
+    height: 40px;
+    width: auto;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #pfp {
@@ -182,22 +186,15 @@ img
 }
 
 #headimg {
-    width: 0%;
+    display: none;
 }
 
 
 #profilepic
  {
-    width: 85%;
-    margin-bottom: 30px;
+    width: 400px;
+    margin-bottom: 10px;
     border-radius: 100px;
-    justify-content: center;
-    transition: all .2s ease-in-out;
-}
-
-
-#profilepic:hover {
-    transform: scale(1.1);
 }
 
 
@@ -231,26 +228,51 @@ select {
     
 }
 
-.leftside {
+.pfpname {
+    display: flex;
+    flex-flow: column;
     width: 100%;
-    justify-items: center;
-    align-content: center;
-    margin-left: 30px;
+    justify-content: center;
 }
+
+.pfpcontainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.leftside {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+
 
 .rightside {
     display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
+    flex-flow: column;
+    text-align: center;
     justify-content: center;
-    padding-right: 20px;
     width: 100%;
+    padding-right: 0px;
+}
+
+.title {
+    height: 80px;
+}
+
+.previewtext {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .profileone {
     display: flex;
-    flex-wrap: wrap;
     flex-flow: column;
+    width: 100%;
     border-bottom: solid;
     border-color: black;
 }
@@ -320,7 +342,6 @@ select {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: blue;
 }
 .signup {
     margin-top: 150px;
@@ -379,7 +400,7 @@ h1 {
     font-family: "Alex Brush", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 60px;
+    font-size: 80px;
     color: #a80d39;
 }
 
