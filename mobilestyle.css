@@ -161,17 +161,20 @@ header {
 
 .centerpiece {
     display: flex;
-    flex-flow: row;
-    margin-top: 20px;
+    flex-flow: column;
+    flex-wrap: wrap;
     height: 100px;
-    width: 100%;
+    width: auto;
     justify-content: center;
+    align-content: center;
 }
 
 .links {
     display: flex;
     flex-flow: row;
     height: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
     width: auto;
     align-items: center;
     justify-content: space-between;
