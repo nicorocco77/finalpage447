@@ -162,6 +162,7 @@ header {
 .centerpiece {
     display: flex;
     flex-flow: row;
+    margin-top: 20px;
     height: 100px;
     width: 100%;
     justify-content: center;
@@ -199,9 +200,9 @@ img
 
 
 #largepfp {
-    width: 31%;
-    border-radius: 10px;
-    margin-top: -70px;
+    width: 100%;
+    border-radius: 100px;
+    margin-top: 0px
 }
 
 footer {
@@ -550,14 +551,18 @@ button:hover {
 
 .displayname {
     display: flex;
-    flex: flow;
+    flex-flow: column;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: -80px;
+    height: 150px;
+    margin-top: 0px;
+    background-color: red;
 
 }
 
 .pass {
     display: flex;
+    width: 100%;
     justify-content: center;
     transition: all .2s ease-in-out;
 }
@@ -568,15 +573,15 @@ button:hover {
 
 .largepic {
     display: flex;
-    flex-wrap: wrap;
     flex-flow: row;
     width: 100%;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-evenly;
 }
 
 .match {
     display: flex;
+    width: 100%;
     justify-content: center;
     transition: all .2s ease-in-out;
 }
@@ -586,7 +591,8 @@ button:hover {
 }
 
 .pfdetail {
-    display: grid;
+    display: flex;
+    flex-flow: column;
     width: 100%;
     padding: 10px;
     justify-content: space-evenly;
@@ -609,46 +615,26 @@ button:hover {
 
 .pfdetailtopleft {
     display: flex;
-    flex-flow: column;
-    width: 80%;
-    padding-right: 40px;
-    padding-left: 40px;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    flex-flow: row;
+    background-color: red;
 }
 
 .pfdetailtopright {
     display: flex;
-    flex-flow: column;
-    width: 80%;
-    padding-right: 40px;
-    padding-left: 40px;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    flex-flow: row;
+    background-color: blue;
 }
 
 .pfdetailbottomleft {
     display: flex;
-    width: 80%;
-    padding-right: 40px;
-    padding-left: 40px;
-    flex-flow: column;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    flex-flow: row;
+    background-color: yellow;
 }
 
 .pfdetailbottomright {
     display: flex;
-    width: 80%;
-    padding-right: 40px;
-    padding-left: 40px;
-    flex-flow: column;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    flex-flow: row;
+    background-color: green;
 }
 
 .description {
