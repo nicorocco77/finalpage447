@@ -1,3 +1,5 @@
+@media screen and (min-width: 600px) {
+
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
@@ -319,6 +321,10 @@ select {
     width: 500px;
     text-align: center;
 }
+
+.signupmobile {
+    display: none;
+}
  
 .leftinfo {
     margin-top: 150px;
@@ -331,6 +337,10 @@ select {
     padding: 10px 20px;
     width: 250px;
     text-align: left;
+}
+
+.leftinfomobile {
+    display: none;
 }
 
 .lefttitle {
@@ -348,6 +358,10 @@ select {
     padding: 10px 20px;
     width: 250px; 
     text-align: right;
+}
+
+.rightinfomobile {
+    display: none;
 }
 
 .righttitle {
@@ -522,6 +536,10 @@ button:hover {
 
 }
 
+.displaynamemobile {
+    display: none;
+}
+
 .pass {
     display: flex;
     justify-content: center;
@@ -541,6 +559,10 @@ button:hover {
     justify-content: space-evenly;
 }
 
+.largepicmobile {
+    display: none;
+}
+
 .match {
     display: flex;
     justify-content: center;
@@ -557,6 +579,10 @@ button:hover {
     padding: 10px;
     justify-content: space-evenly;
 
+}
+
+.pfdetailmobile {
+    display: none;
 }
 
 .pfdetailtop {
@@ -675,4 +701,8 @@ button:hover {
 
 #matchpfp:hover {
     transform: scale(1.1);
+}
+
+
+
 }
