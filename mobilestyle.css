@@ -234,7 +234,7 @@ select {
 }
 
 .form-container {
-    
+    padding: 20px;
 }
 
 .pfpname {
@@ -673,7 +673,7 @@ button:hover {
 }
 
 .pfdetail {
-    display: flex;
+    display: none;
     flex-flow: column;
     width: 100%;
     padding: 10px;
